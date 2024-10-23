@@ -47,7 +47,7 @@ if __name__ == "__main__":
     output_folder = "/data/results/yara_rules_v3"
 
     #Read the file
-    df_pe_info = pd.read_csv('/data/results/prajna/results_to_work_with.csv', sep='\t')
+    df_pe_info = pd.read_csv('results_to_work_with.csv', sep='\t')
 
     #Code to pick only the required clusters
     specific_av_names = ['gandcrab', 'cerber', 'wannacry', 'cryptxxx', 'exxroute', 'tovicrypt','gotango', 'satan', 'titirez']
