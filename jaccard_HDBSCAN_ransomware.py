@@ -543,9 +543,7 @@ if __name__ == "__main__":
     })
 
     #replace filename with something else
-    #df_clusters.to_csv('/data/results/prajna/HDBSCAN_sparse_results_v3.csv')
-    #df_clusters.to_csv('/data/results/prajna/HDBSCAN_sparse_results_v5.csv')
-    df_clusters.to_csv('/data/results/prajna/HDBSCAN_sparse_results_rerun_v2.csv')
+    df_clusters.to_csv('HDBSCAN_sparse_results_rerun_v2.csv')
 
     print("Done")
     print(time.time())
