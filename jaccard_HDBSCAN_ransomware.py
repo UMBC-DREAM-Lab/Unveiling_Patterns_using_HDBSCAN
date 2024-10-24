@@ -225,9 +225,9 @@ if __name__ == "__main__":
     with open('func_maps.pkl', 'rb') as fp:
         function = pickle.load(fp)
 
-    #file_id_map = pd.read_csv('/data/results/prajna/results_ransomware_pe_info_final.csv', sep='\t')
-    #file_id_map = pd.read_csv('/data/results/prajna/results_with_required_pe.csv', sep='\t')
-    file_id_map = pd.read_csv('/data/results/prajna/results_pe_hopefully_final.csv', sep='\t')
+    #Upload the filtered file here
+
+    file_id_map = pd.read_csv('results.csv', sep='\t')
 
     # Make the 'mapped_functions' column contain sets of function IDs
     function_matrix = file_id_map['mapped_functions'].apply(series_to_set)
